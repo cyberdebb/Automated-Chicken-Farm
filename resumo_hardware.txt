@@ -1,0 +1,36 @@
+Projeto granja sustentavel
+
+INFORMAÇÕES:
+- iluminação (8 horas no escuro e 16 horas de luz contínua)
+- disposição de água e alimentação à vontade com reposição a cada hora
+- controle de temperatura (temperatura ideal varia de 18 a 28 graus)
+- temperatura acima de 45 e abaixo de 5 soar alarme
+- uso de watchdog time para garantir o funcionamento do sistema
+
+ENTRADAS:
+- sensor noite RB0
+- sensores de aberto e fechado dos motores que desejam a agua e o alimento RB1, RB2, RB3, RB4
+- água RB5
+- comida RB6
+- temperatura (analogico) RA0 
+- iluminação (analogico) RA1 
+
+SAÍDAS:
+- despejar água (motor) RC0, RC1
+- despejar comida (motor) RC2, RC3
+- ligar sistema de refrigeração RC4
+- ligar sistema de aquecimento RC5
+- ligar/desligar luzes RC6
+- led aviso de reposição de suprimentos RC7
+- buzzer alerta temperatura crítica RB7
+
+DISPLAY LCD: RD2-RD7
+- mostrar temperatura
+- mostrar quantidade de iluminação natural
+
+TIMER:
+- a cada hora, checa se precisa repor os suprimentos e despeja a comida e água (30 segundos)
+
+INTERRUPÇÃO:
+- sensor noite liga e as luzes da granja e o timer para despejar comida desligam (interrupção do RB0)
+- reposição de suprimentos (interrupção do timer1)
