@@ -121,6 +121,12 @@ Displayed information:
 
 ---
 
+## Printed Circuit Board (PCB)
+
+![pcb_page-0001](https://github.com/user-attachments/assets/d8699277-f2f7-40a2-8a7a-6d37650b19c7)
+
+---
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
